@@ -1,0 +1,34 @@
+/* 
+
+  index.css 
+  Is the main css file for the project.
+  It is used to set the global styles for the project.
+
+*/
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.light {
+  --color-bg1: 236, 252, 203;
+  --color-bg2: 254, 252, 232;
+  --color-text-1: 51, 51, 51;
+  --color-text-inv-1: 255, 255, 255;
+  --color-primary-1: 99, 102, 241;
+  --color-bg-card: 217, 249, 157;
+  --color-bg-field: 229, 231, 235;
+  --color-bg-nav: 217, 249, 157;
+}
+
+.dark {
+  --color-bg1: 30, 41, 59;
+  --color-bg2: 17, 24, 39;
+  --color-text-1: 255, 255, 255;
+  --color-text-inv-1: 51, 51, 51;
+  --color-primary-1: 99, 102, 241;
+  --color-bg-card: 31, 41, 55;
+  --color-bg-field: 156, 163, 175;
+  --color-bg-nav: 30, 41, 59;
+}
