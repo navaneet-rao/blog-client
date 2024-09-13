@@ -19,13 +19,13 @@ const Login = () => {
 
   const navigate = useNavigate();
   const { login } = useContext(UserContext);
-   
+
   // Handle form submission, send a POST request to the server
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://192.168.29.252:5000/api/login", {
+      const response = await fetch("https://api.navaneet.tech/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@ const Login = () => {
       } else {
         throw new Error(data.error || "Something went wrong");
       }
-      
+
       // Just to verify the response
       // console.log(data.message);
       // console.log("User:", data.user);

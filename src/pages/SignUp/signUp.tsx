@@ -1,5 +1,5 @@
 //
-// SignUP.tsx 
+// SignUP.tsx
 // contains the sign up form for new users to create an account.
 // It sends a POST request to the server to create a new user.
 // It also contains a link to the login page.
@@ -30,7 +30,7 @@ const SignUp = () => {
     setError("");
 
     try {
-      const response = await fetch("http://192.168.29.252:5000/api/signup", {
+      const response = await fetch("https://api.navaneet.tech/api/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
