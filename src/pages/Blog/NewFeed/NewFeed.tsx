@@ -125,7 +125,6 @@ const NewFeed = () => {
                     </div>
                     <Link
                       to={`/post/${post.id}`}
-                      target="_blank"
                       className="text-blue-400 hover:text-indigo-400 hover:underline"
                     >
                       Read More
