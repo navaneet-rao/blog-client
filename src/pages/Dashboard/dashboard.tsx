@@ -84,7 +84,10 @@ const Dashboard = () => {
   }, [user]);
 
   const handleOpenStudio = () => {
-    window.open("http://0.0.0.0:5555", "_blank");
+    window.open(
+      "https://console.neon.tech/app/projects/still-field-97580672/branches/br-late-voice-a1frqokl/tables?database=blogdb",
+      "_blank"
+    );
   };
 
   const handleDeletePost = async (postId: string) => {
@@ -138,7 +141,7 @@ const Dashboard = () => {
                       onClick={handleOpenStudio}
                       className="mt-4 rounded bg-green-500 px-4 py-2 font-bold text-text-inv-1 hover:bg-green-700"
                     >
-                      Open Prisma Studio
+                      Admin Controls
                     </button>
                   )}
                 </div>
